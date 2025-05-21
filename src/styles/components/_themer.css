@@ -1,0 +1,28 @@
+.themer { 
+   display: grid;
+   grid-template-columns: 1;
+   grid-template-rows: 1;
+
+   border: none;
+   background-color: transparent;
+
+   .themer__icon { 
+      grid-row: 1;
+      grid-column: 1;
+
+      display: none;
+
+      width: var(--fs-lg);
+      height: var(--fs-lg);
+      
+      fill: var(--clr-font);
+
+      &.themer__icon--active {
+         display: block;
+      }
+
+      &:hover {
+         fill: var(--clr-accent);
+      }
+   }
+}

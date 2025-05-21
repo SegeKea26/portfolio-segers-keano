@@ -1,0 +1,19 @@
+.header { 
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+
+   position: fixed;
+   top: 0;
+   backdrop-filter: blur(5px);
+
+
+   height: var(--header-height-fallback);
+   height: var(--header-height);
+
+   width: 100%;
+   max-width: 64rem;
+
+   margin: 0 auto;
+   padding-inline: var(--spacing-md);
+}

@@ -1,0 +1,16 @@
+.title { 
+   font-family: var(--ff-title);
+   font-size: var(--fs-xxl);
+   font-weight: normal;
+   letter-spacing: var(--spacing-sm);
+   line-height: var(--fs-xxl);
+
+   .title--subtitle { 
+      display: block;
+      font-size: var(--fs-lg);
+      letter-spacing: var(--spacing-xs);
+      line-height: var(--fs-lg);
+
+      color: var(--clr-accent);
+   }
+}

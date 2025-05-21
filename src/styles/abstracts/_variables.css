@@ -1,0 +1,38 @@
+:root { 
+   --xs: .25rem;
+   --sm: .5rem;
+   --md: 1rem;
+   --lg: 1.5rem;
+   --xl: 2rem;
+   --xxl: 3rem;
+
+   --radius-xs: var(--xs);
+   --radius-sm: var(--sm);
+   --radius-md: var(--md);
+   --radius-lg: var(--lg);
+   --radius-xl: var(--xl);
+   --radius-xxl: var(--xxl);
+
+   --spacing-xs: var(--xs);
+   --spacing-sm: var(--sm);
+   --spacing-md: var(--md);
+   --spacing-lg: var(--lg);
+   --spacing-xl: var(--xl);
+   --spacing-xxl: var(--xxl);
+
+   --header-height: 10svh;
+   --header-height--fallback: 10dvh;
+
+   --fs-sm: var(--sm);
+   --fs-md: var(--md);
+   --fs-lg: var(--lg);
+   --fs-xl: var(--xl);
+   --fs-xxl: var(--xxl);
+
+   --clr-background: #000000; 
+   --clr-accent: #A11312; 
+   --clr-font: #FFE5CC;
+   --clr-font-transparent: hsla(29, 100%, 90%, 0.5);
+
+   --ff-title: 'Froles', sans-serif;
+}

@@ -1,0 +1,9 @@
+.hero {
+   height: 100svh;
+   padding-block-start: var(--header-height);
+   padding-inline: var(--spacing-sm);
+
+   .hero__title { 
+      
+   }
+}

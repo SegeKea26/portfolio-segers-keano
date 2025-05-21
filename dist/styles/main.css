@@ -1,0 +1,238 @@
+/*
+ * Artevelde Reset.css
+ * Based on modern CSS reset best practices
+ */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+   box-sizing: border-box;
+}
+
+/* Remove default margin and padding */
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+   margin: 0;
+   padding: 0;
+}
+
+/* Set core body defaults */
+body {
+   min-height: 100vh;
+   scroll-behavior: smooth;
+   text-rendering: optimizeSpeed;
+   line-height: 1.5;
+}
+
+/* Remove list styles */
+ul,
+ol {
+   list-style: none;
+}
+
+/* Make images easier to work with */
+img {
+   max-width: 100%;
+   display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+   font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+   * {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+   }
+}
+
+/* Set core root defaults */
+html {
+   scroll-behavior: smooth;
+}
+
+/* Remove text decoration from links */
+a {
+   text-decoration: none;
+   color: inherit;
+}
+
+/* Set cursor for clickable elements */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+   cursor: pointer;
+}
+:root { 
+   --xs: .25rem;
+   --sm: .5rem;
+   --md: 1rem;
+   --lg: 1.5rem;
+   --xl: 2rem;
+   --xxl: 3rem;
+
+   --radius-xs: var(--xs);
+   --radius-sm: var(--sm);
+   --radius-md: var(--md);
+   --radius-lg: var(--lg);
+   --radius-xl: var(--xl);
+   --radius-xxl: var(--xxl);
+
+   --spacing-xs: var(--xs);
+   --spacing-sm: var(--sm);
+   --spacing-md: var(--md);
+   --spacing-lg: var(--lg);
+   --spacing-xl: var(--xl);
+   --spacing-xxl: var(--xxl);
+
+   --header-height: 10svh;
+   --header-height--fallback: 10dvh;
+
+   --fs-sm: var(--sm);
+   --fs-md: var(--md);
+   --fs-lg: var(--lg);
+   --fs-xl: var(--xl);
+   --fs-xxl: var(--xxl);
+
+   --clr-background: #000000; 
+   --clr-accent: #A11312; 
+   --clr-font: #FFE5CC;
+   --clr-font-transparent: hsla(29, 100%, 90%, 0.5);
+
+   --ff-title: 'Froles', sans-serif;
+}
+.header { 
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+
+   position: fixed;
+   top: 0;
+   -webkit-backdrop-filter: blur(5px);
+           backdrop-filter: blur(5px);
+
+
+   height: var(--header-height-fallback);
+   height: var(--header-height);
+
+   width: 100%;
+   max-width: 64rem;
+
+   margin: 0 auto;
+   padding-inline: var(--spacing-md);
+}
+.nav { 
+   .nav__list { 
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: var(--spacing-md);
+
+      list-style: none;
+      margin: 0;
+
+      .nav__item { 
+         .nav__link { 
+            color: var(--clr-font);
+            text-decoration: none;
+
+            font-size: var(--fs-md);
+
+            &:hover { 
+               color: var(--clr-accent);
+            }
+         }
+      }
+   }
+}
+.themer { 
+   display: grid;
+   grid-template-columns: 1;
+   grid-template-rows: 1;
+
+   border: none;
+   background-color: transparent;
+
+   .themer__icon { 
+      grid-row: 1;
+      grid-column: 1;
+
+      display: none;
+
+      width: var(--fs-lg);
+      height: var(--fs-lg);
+      
+      fill: var(--clr-font);
+
+      &.themer__icon--active {
+         display: block;
+      }
+
+      &:hover {
+         fill: var(--clr-accent);
+      }
+   }
+}
+.hero {
+   height: 100svh;
+   padding-block-start: var(--header-height);
+   padding-inline: var(--spacing-sm);
+
+   .hero__title { 
+      
+   }
+}
+.title { 
+   font-family: var(--ff-title);
+   font-size: var(--fs-xxl);
+   font-weight: normal;
+   letter-spacing: var(--spacing-sm);
+   line-height: var(--fs-xxl);
+
+   .title--subtitle { 
+      display: block;
+      font-size: var(--fs-lg);
+      letter-spacing: var(--spacing-xs);
+      line-height: var(--fs-lg);
+
+      color: var(--clr-accent);
+   }
+}
+@font-face {
+   font-family: 'Froles';
+   src: url(/fonts/froles.otf?6921987a77cea03205cfbe1997373c4b);
+}
+
+
+
+body { 
+   color: var(--clr-font);
+   font-family: Arial, Helvetica, sans-serif;
+
+   background-color: var(--clr-background);
+}
