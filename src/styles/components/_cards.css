@@ -1,0 +1,40 @@
+.cards { 
+   display: grid;
+   grid-template-columns: repeat(auto-fit, calc(15rem + var(--spacing-sm)));
+
+   .cards__card { 
+      height: 10rem;
+      width: 15rem;
+
+      margin: var(--spacing-sm);
+
+      border-radius: var(--radius-md);
+      border: 2px solid var(--clr-primary-dark);
+      background-color: var(--clr-primary-light);
+
+      display: grid;
+      grid-template-areas: 
+         "icon"
+         "title"
+      ;
+
+      grid-template-rows: 1fr 1fr;
+
+      .cards__title { 
+         grid-area: title;
+
+         display: flex;
+         justify-self: center;
+      }
+
+      .cards__icon { 
+         grid-area: icon;
+
+         display: flex;
+         justify-self: center;
+         align-self: center;
+         
+         fill: black;
+      }
+   }
+}
