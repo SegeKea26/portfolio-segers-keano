@@ -1,9 +1,21 @@
 .hero {
-   height: 100svh;
    padding-block-start: var(--header-height);
    padding-inline: var(--spacing-sm);
 
-   .hero__title { 
-      
+   .hero__image { 
+      display: block;
+      padding-block-start: var(--spacing-sm);
+   }
+
+   .hero__slogan { 
+      display: block;
+
+      color: var(--clr-font-light);
+
+      padding-block-end: var(--spacing-sm);
+   }
+
+   .hero__introduction { 
+      font-size: var(--fs-md);
    }
 }
