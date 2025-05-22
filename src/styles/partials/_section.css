@@ -1,0 +1,7 @@
+.section { 
+   padding-block-start: var(--header-height-fallback);
+   padding-block-start: var(--header-height);
+
+   padding-inline-start: var(--spacing-sm);
+
+}
