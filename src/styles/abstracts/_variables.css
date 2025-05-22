@@ -12,6 +12,7 @@
    --radius-lg: var(--lg);
    --radius-xl: var(--xl);
    --radius-xxl: var(--xxl);
+   --radius-round: 50%;
 
    --spacing-xs: var(--xs);
    --spacing-sm: var(--sm);
@@ -29,10 +30,19 @@
    --fs-xl: var(--xl);
    --fs-xxl: var(--xxl);
 
-   --clr-background: #000000; 
-   --clr-accent: #A11312; 
-   --clr-font: #FFE5CC;
-   --clr-font-transparent: hsla(29, 100%, 90%, 0.5);
+   --clr-background: #e2e8f0;
+   
+   --clr-primary: #4a6fa5;
+   --clr-primary-light: #6e8cbb;
+   --clr-primary-dark: #345888;
 
-   --ff-title: 'Froles', sans-serif;
+   --clr-secondary: #6eb4a8;
+   --clr-secondary-light: #8fc9bf;
+   --clr-secondary-dark: #539589;
+   
+   --clr-font: #2d3748;
+   --clr-font-light: #4a5568;
+   --clr-font-muted: #718096;
+
+   --ff-title: "Bevan", serif;
 }
